@@ -51,7 +51,7 @@ blockquote {
 
 .container {
 
-    width: 900px;
+    width: 700px;
     margin: 0px auto 0px auto;
 
 }
@@ -61,14 +61,17 @@ blockquote {
     padding-top: 14px;
 }
 
+/*
+
 .mickey {
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
     font-weight: 800;
     line-height: 20px;
+    letter-spacing: 3px;
     color: #2b2b2b;
 
-}
+} */
 
 .giant-header {
 
@@ -81,11 +84,64 @@ blockquote {
 
 .mickey3 {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-
-    font-weight: 500;
+    font-size: 18px;
+    /*letter-spacing: 1px;*/
+    font-weight: 600;
     line-height: 28px;
-    color: black;
+    color: #424242;
+}
+
+.mickey4 {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #424242;
+}
+
+.social-icon {
+
+
+   
+    font-weight: 400;
+    color: #A9A9A9;
+    cursor: pointer;
+    
+    
+
+}
+
+.fa {
+    font-size: 10px;
+}
+
+.social-icon-circle {
+
+    width: 36px;
+    height: 36px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border-style: solid;
+    border-width:1px;
+    border-color:#C0C0C0;
+    margin-left:20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 36px;
+    font-size: 12pt;
+    cursor: pointer;
+
+}
+
+.social-icon-circle:hover{
+  background-color: #EBEBEB;
+}
+
+.search-icon {
+  font-size: 22pt;
+  padding-top:4px;
 }
 
 
@@ -141,6 +197,8 @@ blockquote {
     font-weight: 300;
     color: #333231;
 }
+
+
 
 /*
 
