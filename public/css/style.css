@@ -1,148 +1,150 @@
 body {
 
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
-    font-weight: 400;
-    color: #333231;
+
     background-color: #ffffff;
+}
 
+
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        width:720px;
+    }
+
+    .overlay a {
+
+        font-size: 1.6rem;
+
+      }
 
 }
 
-p {
-
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    line-height: 25px;
+.mickey {
+    font-family:"Bitter", Helvetica, Arial, sans-serif;
+    font-weight: 700;
 
 }
+
+#header-row {
+    margin-top:20px;
+}
+
+#hamburger-container {
+    padding-right:20px;
+    color:rgb(82, 81, 81);
+    cursor: pointer;
+}
+
+#hamburger-icon {
+    color:rgb(82, 81, 81);
+    font-size:1.3rem;
+}
+
 
 .footer {
 	position:fixed;
 	bottom:0px;
-	height:60px;
+    height:40px;
+    font:'Quicksand', Helvetica, Arial, sans-serif;
 	left:0px;
 	width:100%;
 	z-index: 1001;
 	margin-left: auto;
-	margin-right: auto;
-  opacity: 0.85;
-  background-color: #FFFFFF;
+    margin-right: auto;
+    opacity: 0.7;
+    background-color: #FFFFFF;
+    padding-bottom:10px;
+
 }
 
 .footer-text {
 	text-align: center;
 	vertical-align: middle;
-	line-height: 60px;
-	color: #b6b7b8;
-	font-family: 'TurnerRegular';
-	font-size:9pt;
+	line-height: 40px;
+	color:rgb(82, 81, 81);
+	font-family: 'Quicksand';
+    font-size:.8rem;
+    opacity: 0.7;
 }
+
+#footer-heart-icon{
+    color:red;
+}
+
 
 
 blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+  margin-top:40px;
+  margin-bottom:40px;
+  margin-left:40px;
+  margin-right:40px;
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+
+
+}
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 4em/1.08em 'Merriweather', sans-serif;
+  color: #666;
+  text-align: center;
+
+
+
+}
+blockquote:after {
+  content: "\2013 \2003" attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #e74c3c;
+  padding-top:30px;
+}
+
+.note {
   font: 20px 'Lato', sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-left: 15px;
-  border-left: 5px solid #E74C3C;
+  border-left: 2px solid #E74C3C;  
 }
 
-.container {
 
-    width: 700px;
-    margin: 0px auto 0px auto;
 
-}
 
-.mickey-container {
-    float:left;
-    padding-top: 14px;
-}
 
-/*
 
-.mickey {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2em;
-    font-weight: 800;
-    line-height: 20px;
-    letter-spacing: 3px;
-    color: #2b2b2b;
 
-} */
-
-.giant-header {
+.giant-caption {
 
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 48px;
+  font-size: 3.0rem;
   font-weight: 200;
   color: black;
 
 }
 
-.mickey3 {
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    /*letter-spacing: 1px;*/
-    font-weight: 600;
-    line-height: 28px;
-    color: #424242;
-}
-
-.mickey4 {
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #424242;
-}
-
-.social-icon {
 
 
-   
-    font-weight: 400;
-    color: #A9A9A9;
-    cursor: pointer;
-    
-    
 
-}
 
-.fa {
-    font-size: 10px;
-}
-
-.social-icon-circle {
-
-    width: 36px;
-    height: 36px;
-    -moz-border-radius: 18px;
-    -webkit-border-radius: 18px;
-    border-radius: 18px;
-    border-style: solid;
-    border-width:1px;
-    border-color:#C0C0C0;
-    margin-left:20px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 36px;
-    font-size: 12pt;
-    cursor: pointer;
-
-}
-
-.social-icon-circle:hover{
-  background-color: #EBEBEB;
-}
-
-.search-icon {
-  font-size: 22pt;
-  padding-top:4px;
-}
 
 
 
@@ -156,40 +158,21 @@ blockquote {
     margin-top: 25px;
 }
 
-.test {
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-
-    font-weight: 400;
-    color: black;
-}
-
-.bracket {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-size: 24px;
-
-    font-weight: 700;
-    color: black;
-}
 
 
-.test1 {
+
+
+
+.montserrat-body {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 16px;
-
     font-weight: 400;
     color: black;
 }
 
-.test2 {
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-size: 16px;
 
-    font-weight: 400;
-    color: #333231;
-}
 
-.header {
+.raleway-header {
      font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 22px;
     margin-top:30px;
@@ -199,6 +182,81 @@ blockquote {
 }
 
 
+
+.poppins-body {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #333231;
+}
+
+
+
+
+
+
+
+.josephin-header {
+    font-family: 'Josephin+Sans', Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-weight: 300;
+    color: #333231;
+}
+
+
+.quicksand-header {
+
+}
+
+.merriweather-body {
+    font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+    font-size: .9em;
+    font-weight: 400;
+    color: #333231;
+}
+
+.ptsans-body {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: .9em;
+    font-weight: 400;
+    color: #333231;
+}
+
+
+.montserrat-header-bold {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333231;
+}
+
+
+
+.post-caption {
+   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+   font-size: 1.3em;
+   margin-top:30px;
+   margin-bottom:30px;
+   font-weight: 300;
+   color: #333231;
+}
+
+.post-summary {
+
+}
+
+p {
+
+   font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+   font-size: 0.9rem;
+   margin-top:30px;
+   margin-bottom:30px;
+   font-weight: 400;
+   color:rgb(82, 81, 81);
+   line-height: 1.5rem;
+}
 
 /*
 
@@ -214,24 +272,210 @@ blockquote {
 
 */
 
-.my {
-  font: 400 50px/1.1 'Yellowtail', Helvetica, sans-serif;
-  color: #2b2b2b;
-  float:left;
-  line-height: 50px;
-}
 
+/*
 .vertical-line {
     height:40px;
     width:1px;
     background-color: #2b2b2b;
     float:left;
     margin:18px;
-}
+}*/
 
-
+/*
 .spacer {
 
     height: 40px;
     clear: both;
 }
+*/
+
+
+
+
+
+/*
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    border-bottom-style:solid;
+    border-bottom-width:5px;
+    border-bottom-color:rgb(107, 181, 247);
+    opacity: 39%;
+  }
+
+
+
+
+
+  a:before{
+    will-change: transform;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    transition: 100ms ease-out 50ms;
+    transform-origin: 0 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: mix(#f1f1f1, #0077ff, 80%);
+
+
+  }
+  
+  a:after {
+    will-change: transform;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    transition: 50ms ease-out;
+    transform: scaleX(0);
+    transform-origin: left center;
+    bottom: 2px;
+    right: -12px;
+    border: 8px solid transparent;
+    border-left-color: mix(#f1f1f1, #0077ff, 60%);
+  }
+
+
+
+
+  
+  a:link {
+    color: #333231;
+  }
+  
+  a:visited {
+    color: #333231;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+    background: #BAE498;
+  }
+  
+  a:hover {
+
+    outline: none;
+    text-decoration: none;
+  }
+
+  a:hover:before {
+
+    transition: 100ms ease-out;
+    transform: scaleY(.18);
+    background: mix(#f1f1f1, #0077ff, 60%);
+  }
+
+  a:hover:after {
+    transition: 50ms ease-out 100ms;
+    transform: none;
+  }
+  
+  a:active {
+    color: #333231;
+  }
+
+
+*/
+
+
+
+
+a {
+    display: inline-block;
+    position: relative;
+    color: #343434;
+    text-decoration: none;
+    
+    border-bottom-width:3px;
+    border-bottom-color:#91c0f7;
+    border-bottom-style:solid; 
+
+    /*background-color: #91c0f7;*/
+    outline: none !important;
+    display:inline-block;
+    height:1.5em;
+    line-height: 1.5em;
+    transition: 0.5s;
+  }
+
+  
+  a:hover {
+
+    outline: none;
+    text-decoration: none;
+    background-color: #91c0f7;
+  }
+
+
+  a:link {
+    color: #333231;
+  }
+  
+  a:visited {
+    color: #333231;
+  }
+  
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 370px; /* 100% width */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: red;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    color:white;
+    font-size:1.3rem;
+    cursor: pointer;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
