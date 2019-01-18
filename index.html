@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Mickey Yawn</title>
+        <title>Mickey Yawn</title>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,74 +21,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"  crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/45fe87eefa.js"></script>
+        <script src="public/js/site.js"></script>
+        <!-- IMPORTANT.  include our style sheet last so that it will override bootstrap when needed-->
+        <link rel="stylesheet" href="public/css/style.css">
 
-
-    <!-- IMPORTANT.  include our style sheet last so that it will override bootstrap when needed-->
-    <link rel="stylesheet" href="public/css/style.css">
-
-    <script type="text/javascript" >
-
-
-
-        /* Open */
-        function openNav() {
-
-            document.cookie = "viewedMenu=true";
-            $('#hamburger-container').tooltip('hide');
-
-
-            var hamburger = document.getElementById("hamburger-container");
-            var menuCloseButton = document.getElementById("menu-close-button");
-            var navOverlay = document.getElementById("myNav");
-
-
-            var rect = hamburger.getBoundingClientRect();
-
-            menuCloseButton.style.top = rect.top +'px';
-            menuCloseButton.style.left = rect.left +'px';
-            navOverlay.style.height = "100%";
-
-            }
-
-        /* Close */
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        }
-
-        $(function () {
-
-            console.log('checking cookier');
-
-            console.log(document.cookie);
-            console.log(!document.cookie);
-            console.log(document.cookie.viewedMenu == 'true');
-
-
-            if(!document.cookie.viewedMenu){
-
-                var options = {};
-                options.title = 'Click menu for options';
-                options.placement = 'left';
-                options.trigger = 'manual';
-        
-
-                $('#hamburger-container').tooltip(options);
-                $('#hamburger-container').tooltip('show');
-
-                setTimeout(function(){ $('#hamburger-container').tooltip('dispose'); }, 3000);
-            }
- 
-
-
-
-        })
-
-
-
-
-    
-
-    </script>
 
 	</head>
 
@@ -138,6 +75,9 @@
                         <div class='regular-text'>Thanks for stopping by.  My name is Mickey and 
                             this is my home on the web. Please check out my <a href="">blog</a>, 
                             send me an <a href="">email</a> or check out my profile on <a href="">Linkedin</a>.</div>
+
+
+                            <img src='public/images/sign.png'/>
                             
 
                     </div> <!-- column -->
