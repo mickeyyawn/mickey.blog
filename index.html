@@ -41,11 +41,9 @@
             <!-- Overlay content -->
             <div class="overlay-content">
                 <div>
-                    <a href="#"><i class="fas fa-home"></i>&nbsp Home</a>
-                    <a href="#"><i class="fas fa-blog"></i>&nbsp Blog</a>
-                    <a href="#"><i class="fas fa-envelope-square"></i>&nbsp Send me an email</a>
-                    <a href="#"><i class="fab fa-twitter-square"></i>&nbsp Contact me on twitter</a>
-                    <a href="#"><i class="fab fa-linkedin"></i>&nbsp  View my Linkedin profile</a>
+                    <a href="#" id='me-menu-anchor'>Me</a>
+                    <a href="#" id='blog-menu-anchor'>Blog</a>
+                    <a href="#" id='contact-menu-anchor'>Contact</a>
                 </div>
             </div>
             
@@ -60,33 +58,52 @@
                     <div style='float:right' onclick="openNav()" id="hamburger-container"  >
                         <i id="hamburger-icon" class="fas fa-bars"></i>
                     </div>
+                    
                 </div>
             </div>
-
 
             <div class="row" id='content-row'>
                     <div class="col">
                         <br>
-                        <br>
-                        <br>
-                        <div class='giant-caption'>  Hello.  </div>
-                        <br>
-                        <br>
-                        <div class='regular-text'>Thanks for stopping by.  My name is Mickey and 
-                            this is my home on the web. Please check out my <a href="">blog</a>, 
-                            send me an <a href="">email</a> or check out my profile on <a href="">Linkedin</a>.</div>
-
-
+                        <div id='about-container'>
+                            <br>
+                            <div class='giant-caption'>  Hello.  </div>
+                            <br>
+                            <br>
+                            <div class='regular-text'>Thanks for stopping by.  My name is Mickey and 
+                                this is my home on the web. Please check out my <a href="">blog</a>, 
+                                send me an <a href="">email</a> or check out my profile on <a href="">Linkedin</a>.
+                            </div>
+                        </div>
+                        <div id='contact-container'>
+                            <br>
+                            <div class='giant-caption'>  Contact me.  </div>
+                            <br>
+                            <div class='caption caption-bold'>Email</div>
+                            <div class='regular-text'><a href='mailto:mickeyyawn@gmail.com' class='smaller-link'>mickeyyawn@gmail.com</a></div>
+                            <br>
+                            <div class='caption caption-bold'>Twitter</div>
+                            <div class='regular-text'><a href='https://www.twitter.com/mickeyyawn' target="_blank" class='smaller-link'>@mickeyyawn</a></div>
+                            <br>
+                            <div class='caption caption-bold'>Github</div>
+                            <div class='regular-text'><a href='https://www.github.com/mickeyyawn' target="_blank" class='smaller-link'>github.com/mickeyyawn</a></div>
+                            <br>
+                            <div class='caption caption-bold'>Linkedin</div>
+                            <div class='regular-text'><a href='https://www.linkedin.com/in/mickeyyawn' target="_blank" class='smaller-link'>linkedin/in/mickeyyawn</a></div>
+                        </div>
+                        <div id='blog-index-container'>
+                            <div><div class='giant-caption'>  Coming soon!!!  </div></div>
+                        </div>
+                        <div id='post-container'>
                             <img src='public/images/sign.png'/>
-                            
+                        </div>
 
                     </div> <!-- column -->
 
             </div> <!-- row -->
 
 
-
-            <div class="footer">
+            <div id="footer" class="footer">
                 <div class="footer-text">Built with <i class="fas fa-heart" id="footer-heart-icon"></i> by Mickey Yawn in Atlanta, GA. All rights reserved. 2019. </div>
             </div>
 

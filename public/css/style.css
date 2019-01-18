@@ -46,6 +46,82 @@ body {
 
 
 
+
+
+/* at some point i might switch out the hamburger for the following
+
+
+               <div class="menu-button"><span>MENU</span></div>
+
+.menu-button {
+	background: #E74C3C;  
+  border-radius:24px;
+  -moz-border-radius: 24px; 
+  -webkit-border-radius: 24px; 
+  border-color: rgb(199, 68, 53);  
+  border-style: solid;
+  border-width:2px;
+	color: white;
+	display:table;
+	height: 48px;
+  font-family:"Raleway", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: .6rem;
+  width: 48px;
+  cursor: pointer;
+
+}
+.menu-button span {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+
+}
+
+ and use this trick to change hover state:
+
+
+ You could toggle which one's shown on hover:
+
+HTML:
+<a href="#" class="lock">
+    <i class="icon-unlock"></i>
+    <i class="icon-lock"></i>
+</a>
+CSS:
+.lock:hover .icon-unlock,
+.lock .icon-lock {
+    display: none;
+}
+.lock:hover .icon-lock {
+    display: inline;
+}
+Or, you could change the content of the icon-unlock class:
+
+.lock:hover .icon-unlock:before {
+    content: "\f023";
+}
+
+*/
+
+#about-container{
+  display:none;
+}
+#contact-container{
+  display:none;
+}
+#blog-index-container{
+  display:none;
+}
+#post-container{
+  display:none;
+}
+
+
+
+
+
+
 p {
 
     font-family: 'Merriweather', Helvetica, Arial, sans-serif;
@@ -58,13 +134,17 @@ p {
  }
 
 
- .post-caption {
+ .caption {
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 1.3rem;
-    margin-top:30px;
-    margin-bottom:30px;
+    font-size: 1.2rem;
     font-weight: 300;
     color: #333231;
+    margin-top:10px;
+
+ }
+ 
+ .caption-bold {
+  font-weight: 700;
  }
 
 
@@ -175,25 +255,25 @@ blockquote:after {
 .menu {
 
     font-family: 'Raleway', sans-serif;
-    font-size: .75em;
+    font-size: .9rem;
     font-weight: 800;
     float:right;
     margin-left: 40px;
     margin-top: 25px;
 }
 
+.smaller-link {
+  font-size: 1.1rem;
+}
 
 a {
     display: inline-block;
     position: relative;
     color: #343434;
     text-decoration: none;
-    
     border-bottom-width:3px;
     border-bottom-color:#91c0f7;
     border-bottom-style:solid; 
-
-    /*background-color: #91c0f7;*/
     outline: none !important;
     display:inline-block;
     height:1.5em;
@@ -201,17 +281,13 @@ a {
     transition: 0.5s;
     padding-left:2px;
     padding-right:2px;
-
-
   }
 
   
   a:hover {
-   
     outline: none;
     text-decoration: none;
     background-color: rgb(145, 192, 247, 0.3);
-
   }
 
 
@@ -235,8 +311,8 @@ a {
     text-align: center;
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    background-color: rgb(231,76,60); /* fallback color */
+    background-color: rgba(231,76,60, 0.9); /* orange w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
@@ -255,30 +331,28 @@ a {
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 4.0rem;
+    font-weight:bold;
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    color: #818181;
+    color: white;
     display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    transition: 0.2s; /* Transition effects on hover (color) */
     text-align: left;
     border-bottom-width:0px;
     border-bottom-style:none; 
-    margin-top: 20px;
+    margin-top: 50px;
     height:30px;
-    line-height: 20px;
+ 
 
     
   }
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover {
-    color:white;
-    
+    color:rgb(243, 192, 187);
     
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.0);  
- 
-
   }
 
 
@@ -287,7 +361,7 @@ a {
   .overlay .closebtn {
     position: absolute;
     color:white;
-    font-size:1.3rem;
+    font-size:3.0rem;
     cursor: pointer;
   }
   

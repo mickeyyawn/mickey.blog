@@ -1,3 +1,11 @@
+                           <a href="#"><i class="fas fa-home"></i>&nbsp Home</a>
+                    <a href="#"><i class="fas fa-blog"></i>&nbsp Blog</a>
+                    <a href="#"><i class="fas fa-envelope-square"></i>&nbsp Send me an email</a>
+                    <a href="#"><i class="fab fa-twitter-square"></i>&nbsp Contact me on twitter</a>
+                    <a href="#"><i class="fab fa-linkedin"></i>&nbsp  View my Linkedin profile</a>
+       
+       
+       
                     <!--
                     <div class='search-icon'>
                         <i class="fa fa-search social-icon" aria-hidden="true" style='float:right;margin-left:140px;margin-top:4px'></i>

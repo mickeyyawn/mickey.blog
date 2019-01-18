@@ -15,7 +15,7 @@
 
             var rect = hamburger.getBoundingClientRect();
 
-            menuCloseButton.style.top = rect.top +'px';
+            menuCloseButton.style.top = rect.top +'px' - 10;
             menuCloseButton.style.left = rect.left +'px';
             navOverlay.style.height = "100%";
 
@@ -26,13 +26,40 @@
             document.getElementById("myNav").style.height = "0%";
         }
 
+        function hideAllContainers() {
+            $( "#about-container" ).hide();
+            $( "#contact-container" ).hide();
+            $( "#blog-index-container" ).hide();
+            $( "#post-container" ).hide();
+        }
+
         $(function () {
 
-            console.log('checking cookier');
+            //console.log('checking cookier');
 
-            console.log(document.cookie);
-            console.log(!document.cookie);
-            console.log(document.cookie.viewedMenu == 'true');
+            //console.log(document.cookie);
+            //console.log(!document.cookie);
+            //console.log(document.cookie.viewedMenu == 'true');
+
+            $( "#about-container" ).show();
+
+
+            $( "#me-menu-anchor" ).click(function() {
+                closeNav();
+                hideAllContainers();
+                $( "#about-container" ).show();
+            });
+            $( "#blog-menu-anchor" ).click(function() {
+                closeNav();
+                hideAllContainers();
+                $( "#blog-index-container" ).show();
+            });
+            $( "#contact-menu-anchor" ).click(function() {
+                closeNav();
+                hideAllContainers();
+                $( "#contact-container" ).show();
+            });
+
 
 
             if(!document.cookie.viewedMenu){
