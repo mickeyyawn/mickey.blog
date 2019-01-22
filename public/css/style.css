@@ -1,10 +1,14 @@
 body {
-
-
     background-color: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 
 
+
+@media all and (max-width: 700px) and (min-width: 0px) {
+
+}
 
 
 @media (min-width: 768px) {
@@ -19,7 +23,15 @@ body {
 
       }
 
+      .giant-caption {
+
+        font-size: 6.0rem;
+      
+      }
 }
+
+
+
 
 .mickey {
     font-family:"Bitter", Helvetica, Arial, sans-serif;
@@ -134,9 +146,19 @@ p {
  }
 
 
+ .giant-caption {
+
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 4.0rem;
+  font-weight: 200;
+  color:rgb(82, 81, 81);
+
+}
+
+
  .caption {
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 1.0rem;
     font-weight: 300;
     color: #333231;
     margin-top:10px;
@@ -152,7 +174,7 @@ p {
   position:fixed;
   bottom:0px;
   height:40px;
-  font:'Quicksand', Helvetica, Arial, sans-serif;
+  font:'Raleway', Helvetica, Arial, sans-serif;
   left:0px;
   width:100%;
   z-index: 1001;
@@ -169,7 +191,7 @@ p {
 	vertical-align: middle;
 	line-height: 40px;
 	color:rgb(82, 81, 81);
-	font-family: 'Quicksand';
+	font-family: 'Raleway';
     font-size:.8rem;
     opacity: 0.7;
 }
@@ -192,7 +214,7 @@ blockquote {
   margin-bottom:40px;
   margin-left:40px;
   margin-right:40px;
-  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   color:rgb(82, 81, 81);
   font-size: 1.2em;
   font-weight: 400;
@@ -226,7 +248,7 @@ blockquote:after {
 }
 
 .note {
-  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   color:rgb(82, 81, 81);
   font-size: 1.2em;
   font-weight: 400;
@@ -236,14 +258,7 @@ blockquote:after {
   border-left: 2px solid #E74C3C;  
 }
 
-.giant-caption {
 
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 4.0rem;
-  font-weight: 200;
-  color:rgb(82, 81, 81);
-
-}
 
 .regular-text {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
@@ -263,7 +278,7 @@ blockquote:after {
 }
 
 .smaller-link {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
 }
 
 a {
@@ -333,7 +348,7 @@ a {
     text-decoration: none;
     font-size: 4.0rem;
     font-weight:bold;
-    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     color: white;
     display: block; /* Display block instead of inline */
     transition: 0.2s; /* Transition effects on hover (color) */

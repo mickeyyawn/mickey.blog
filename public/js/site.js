@@ -27,6 +27,7 @@
         }
 
         function hideAllContainers() {
+            $( "#breadcrumb-container" ).hide();
             $( "#about-container" ).hide();
             $( "#contact-container" ).hide();
             $( "#blog-index-container" ).hide();
@@ -34,6 +35,8 @@
         }
 
         $(function () {
+
+            hideAllContainers();
 
             //console.log('checking cookier');
 
@@ -60,7 +63,14 @@
                 $( "#contact-container" ).show();
             });
 
-
+            $( "#blog-anchor" ).click(function() {
+                hideAllContainers();
+                $( "#blog-index-container" ).show();
+            });
+            $( "#contact-anchor" ).click(function() {
+                hideAllContainers();
+                $( "#contact-container" ).show();
+            });
 
             if(!document.cookie.viewedMenu){
 

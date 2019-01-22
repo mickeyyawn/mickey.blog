@@ -14,7 +14,7 @@
         <meta http-equiv="pragma" content="no-cache" />
     
         <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
-        <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Raleway:100, 200,300,400,700,800|Quicksand:400,700|Merriweather:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Raleway:100, 200,300,400,700,800|Merriweather:400" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -64,34 +64,46 @@
 
             <div class="row" id='content-row'>
                     <div class="col">
-                        <br>
+                        <div id='breadcrumb-container'>
+                          <br>
+                          <br>
+                            <table>
+                                <tr>
+                                    <td><a href='#' class='smaller-link'>HOME</a> &nbsp ||</td>
+                                    <td><div>CONTACT</div></td>
+                                </tr>
+                            </table>
+                        </div>
                         <div id='about-container'>
+                            <br>
                             <br>
                             <div class='giant-caption'>  Hello.  </div>
                             <br>
                             <br>
                             <div class='regular-text'>Thanks for stopping by.  My name is Mickey and 
-                                this is my home on the web. Please check out my <a href="">blog</a>, 
-                                send me an <a href="">email</a> or check out my profile on <a href="">Linkedin</a>.
+                                this is my home on the web. Please check out my <a href="#" id='blog-anchor'>blog</a> 
+                                or <a href="#" id='contact-anchor'>contact</a> me if you like.
                             </div>
                         </div>
                         <div id='contact-container'>
                             <br>
                             <div class='giant-caption'>  Contact me.  </div>
                             <br>
-                            <div class='caption caption-bold'>Email</div>
+                            <div class='caption caption-bold'>EMAIL</div>
                             <div class='regular-text'><a href='mailto:mickeyyawn@gmail.com' class='smaller-link'>mickeyyawn@gmail.com</a></div>
                             <br>
-                            <div class='caption caption-bold'>Twitter</div>
+                            <div class='caption caption-bold'>TWITTER</div>
                             <div class='regular-text'><a href='https://www.twitter.com/mickeyyawn' target="_blank" class='smaller-link'>@mickeyyawn</a></div>
                             <br>
-                            <div class='caption caption-bold'>Github</div>
+                            <div class='caption caption-bold'>GITHUB</div>
                             <div class='regular-text'><a href='https://www.github.com/mickeyyawn' target="_blank" class='smaller-link'>github.com/mickeyyawn</a></div>
                             <br>
-                            <div class='caption caption-bold'>Linkedin</div>
+                            <div class='caption caption-bold'>LINKEDIN</div>
                             <div class='regular-text'><a href='https://www.linkedin.com/in/mickeyyawn' target="_blank" class='smaller-link'>linkedin/in/mickeyyawn</a></div>
                         </div>
                         <div id='blog-index-container'>
+                            <br>
+                            <br>
                             <div><div class='giant-caption'>  Coming soon!!!  </div></div>
                         </div>
                         <div id='post-container'>
